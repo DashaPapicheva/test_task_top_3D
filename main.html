@@ -5,33 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top 3D</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
     <header>    
-        <div>
-            <div>
-                <a href="#">Санкт-Петербург</a>
-                <a href="tel:+78126135838">+7 (812) 613-58-38</a>
+        <div class="header_top">
+            <div class="header_top_contacts-left">
+                <select class="header_city_select" name="city_select" id="citySelect">
+                        <option value="Санкт-Петербург" selected>Санкт-Петербург</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Рязань">Рязань</option>
+                        <option value="Екатеринбург">Екатеринбург</option>
+                        <option value="Владивосток">Владивосток</option>
+                </select>
+                <a class="header_top_tel-left" href="tel:+78126135838">+7 (812) 613-58-38</a>
                 <div>Пн–пт 10:00–19:00, сб-вс 10:00–17:00</div>
             </div>
 
-            <div>
-                <a href="mailto:#">Напишите нам</a>
-                <a href="mailto:#">Свяжитесь с директором</a>
+            <div class="header_top_contacts-right">
+                <a class="header_top_mail" href="mailto:#">Напишите нам</a>
+                <a class="header_top_mail" href="mailto:#">Свяжитесь с директором</a>
                 <div class="socials">
                     <a href="#"><img src="pict/telegram.svg" alt="Telegram"></a>
                     <a href="#"><img src="pict/skype.svg" alt="Skype"></a>
-                    <a href="tel:+78126135838"><img src="pict/tel.svg" alt="Telephone"></a>
+                    <a class="header_top_tel-right" href="tel:+78126135838"><img src="pict/tel.svg" alt="Telephone"></a>
                 </div>
             </div>
         </div>
 
-        <div>
-            <a href="#"><img src="pict/logo.png" alt="Логотип Top 3D shop"></a>
-            <div>Ваш эксперт на рынке <span>3D</span>-техники</div>
-            <div>
-                <img src="pict/yandex_rating.png" alt="Рейтинг на Яндекс Маркете">
+        <div class="header_intro">
+            <a class="logo_image" href="#"><img src="pict/logo.png" alt="Логотип Top 3D shop"></a>
+            <div class="header_intro_words">Ваш эксперт <br>на рынке <span class="red">3D</span>-техники</div>
+            <div class="rating_image_wrapper">
+                <img class="rating_image" src="pict/yandex_rating.png" alt="Рейтинг на Яндекс Маркете">
             </div>
             <form action="#">
                 <input type="text" name="searchPlace" id="searchPlace" placeholder="Введите запрос, например, Formlabs Form 2">
@@ -41,40 +50,40 @@
             <a href="#">Корзина пуста</a>
         </div>
 
-        <nav>
-            <ul>
-                <li>Акции</li>
-                <li>О нас</li>
-                <li>Мероприятия</li>
-                <li>Оплата и доставка</li>
-                <li>Что с моим заказом?</li>
-                <li>Гос. закупки</li>
-                <li>Блог</li>
-                <li>Мастер-классы</li>
-                <li>Контакты</li>
+        <nav class="header_nav">
+            <ul class="header_nav_list">
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Мероприятия</a></li>
+                <li><a href="#">Оплата и доставка</a></li>
+                <li><a href="#">Что с моим заказом?</a></li>
+                <li><a href="#">Гос. закупки</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Мастер-классы</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
         </nav>
 
-        <div>
-            <ul>
-                <li>3D-принтеры</li>
-                <li>3D-сканеры</li>
-                <li>Станки</li>
-                <li>Роботы</li>
-                <li>Образование</li>
-                <li>Стоматологам</li>
-                <li>Гаджеты</li>
-                <li>Материалы</li>
-                <li>ПО</li>
-                <li>Решения</li>
-                <li>Учебный центр</li>
-                <li>Услуги</li>
+        <div class="header_offers">
+            <ul class="header_offers_list">
+                <li><a href="#">3D-принтеры</a></li>
+                <li><a href="#">3D-сканеры</a></li>
+                <li><a href="#">Станки</a></li>
+                <li><a href="#">Роботы</a></li>
+                <li><a href="#">Образование</a></li>
+                <li><a href="#">Стоматологам</li>
+                <li><a href="#">Гаджеты</a></li>
+                <li><a href="#">Материалы</a></li>
+                <li><a href="#">ПО</a></li>
+                <li><a href="#">Решения</a></li>
+                <li><a href="#">Учебный центр</a></li>
+                <li><a href="#">Услуги</a></li>
             </ul>
         </div>
     </header>
 
     <main>
-        <section>
+        <section class="main_block">
             <div>
                 <div>
                     <img src="pict/top_team.png" alt="Команда компании Top 3D">
@@ -102,32 +111,32 @@
             </div>
         </section>
 
-        <section>
+        <section class="articles">
             <h4>Лучше один раз увидеть:</h4>
 
-            <div>
-                <a href="#">Как устроена наша компания изнутри</a>
+            <div class="articles_list">
+                <div class="articles_item red"><a href="#"><span class="bottom_border">Как устроена наша компания изнутри</span></a></div>
 
-                <a href="#">Как создавалась компания - необычная история</a>
+                <div class="articles_item"><a href="#"><span class="bottom_border">Как создавалась компания - необычная история</span></a></div>
 
-                <a href="#">Читай о нас на 3D Today</a>
+                <div class="articles_item"><a href="#"><span class="bottom_border">Читай о нас на 3D Today</span></a></div>
             </div>
         </section>
 
-        <section>
-            <div>            
+        <section class="video_section">
+            <div class="video_section__head">            
                 <h2>Видео о нас</h2>
 
-                <div>
-                    <a href="#"></a>
-                    <a href="#"></a>
+                <div class="arrows_block">
+                    <a class="arrow_button arrow_left" href="#"></a>
+                    <a class="arrow_button arrow_right" href="#"></a>
                 </div>
             </div>
 
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OYFOWAL1NlA" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video_list">
+                <iframe width="550" height="305" src="https://www.youtube.com/embed/OYFOWAL1NlA" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SOYBsly_yN8" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="550" height="305" src="https://www.youtube.com/embed/SOYBsly_yN8" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
     </main>
