@@ -86,7 +86,12 @@ li {
 .red {
 	color: #D2001C;
 }
-
+.underlined {
+	text-decoration: underline;
+}
+.clear_block {
+	clear: both;
+}
 
 /* Стили шапки */
 
@@ -97,10 +102,7 @@ li {
 	background-color: #FED600;
 }
 
-.header_top_contacts-left {
-	display: flex;
-}
-
+.header_top_contacts-left,
 .header_top_contacts-right {
 	display: flex;
 }
@@ -128,10 +130,15 @@ li {
 }
 
 .header_intro {
-	margin: 16px 120px 0;
+	margin: 12px 120px 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.header_intro_brand {
+	display: flex;
+	align-items: center;
 }
 
 .logo_image,
@@ -139,14 +146,15 @@ li {
 	width: 64px;
 }
 
-.header_intro_words {
+.header_intro_slogan {
+	margin-left: 18px;
 	font-family: 'OpenSans Regular';
 	font-style: italic;
 }
 
 .rating_image_wrapper {
 	min-width: fit-content;
-	padding: 0 10px;
+	padding: 0 12px;
 	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
 	border-radius: 8px;
 }
@@ -157,8 +165,54 @@ li {
 	border-radius: 8px;
 }
 
+.header_intro_search {
+	width: 521px;
+	height: 44px;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #BDBDBD;
+	border-radius: 4px;
+	font-family: 'OpenSans SemiBold';
+	font-size: 13px;
+}
+.header_intro_input {
+	min-width: 290px;
+	margin-left: 16px;
+	color: #9E9E9E;
+	outline: none;
+}
+.header_intro_btn {
+	margin: 4px;
+	padding: 0 17px;
+	border: 2px solid #D2001C;
+	border-radius: 4px;
+	background-color: #FFF;
+	text-align: center;
+	outline: none;
+}
+
+.entry_btn {
+	padding: 3px 3px 3px 32px;
+	background-image: url(/pict/entry.svg);
+	background-size: 22px;
+	background-repeat: no-repeat;
+	background-position: 2% 50%;
+}
+
+.basket_btn {
+	padding: 9px 14px 9px 48px;
+	border-radius: 4px;
+	background-image: url(/pict/basket.svg);
+	background-size: 25px;
+	background-repeat: no-repeat;
+	background-position: 11% 50%;
+	background-color: #D2001C;
+	color: #FFF;
+}
+
 .header_nav {
-	margin: 13px 124px 22px 127px;
+	padding: 12px 124px 21px 127px;
+	border-bottom: 1px solid #BDBDBD ;
 }
 
 .header_nav_list {
@@ -168,7 +222,7 @@ li {
 }
 
 .header_offers {
-	margin: 21px 127px 0 129px;
+	margin: 22px 127px 0 129px;
 }
 
 .header_offers_list {
@@ -176,31 +230,98 @@ li {
 	justify-content: space-between;
 	font-family: 'OpenSans Bold';
 }
+.header_offers_item {
+	padding-right: 1rem;
+	background-image: url(/pict/arrow_down.svg);
+	background-size: 10px;
+	background-repeat: no-repeat;
+	background-position: 98% 60%;
+}
 
 
 /* Стиль основного облока */
 
 .main_block {
-	margin: 70px 154px 0;
+	margin: 70px 107px 0;
+}
+.main_pict {
+	width: 1234px;
+	min-height: 430px;
+	background-image: url(/pict/top_team.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 42%;
 }
 
+.resume_block {
+	width: 38%;
+	margin-top: 50px;
+	padding-right: 10%;
+	float: left;
+}
+.resume_block h3 {
+	font-family: 'SFDisplay Regular';
+	font-weight: 400;
+	font-size: 27px;
+}
+
+.resume_btn {
+	display: block;
+	margin-top: 40px;
+	padding: 12px 16px;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #D2001C;
+	font-family: 'SFText Medium';
+	color: #FFF;
+}
+
+.resume_note {
+	display: block;
+	max-width: 265px;
+	margin-top: 20px;
+	font-family: 'SFText Medium';
+	font-size: 14px;
+	color: #C4C4C4;
+}
+
+.about_block {
+	margin-top: 50px;
+}
+.about_block p  {
+	margin-bottom: 20px;
+	text-align: justify;
+	font-family: 'SFText Medium';
+	font-size: 16px;
+	color: #4D4D4D;
+}
 
 /* Стиль блока со статьями */
 
 .articles {
-	margin: 70px 154px 0;
+	margin: 70px 107px 0;
 }
 
-.articles h4 {
+.articles_header {
+	display: flex;
+	align-items: center;
+}
+
+.articles_title {
 	text-align: left;
 	font-size: 24px;
 	font-weight: 500;
 	letter-spacing: -0.7px;
 }
+.line {
+	margin: 5px 0 0 20px;
+	flex: 2;
+	border-bottom: 1px solid #C4C4C4;
+}
 
 .articles_list {
-	margin-top: 50px;
-	display: flex;
+	margin: 50px 100px 0 0;
+	display: flex; 
 	justify-content: space-between;
 }
 
@@ -216,7 +337,6 @@ li {
 	background-size: 7px;
 	background-repeat: no-repeat;
 	background-position: 100% 70%;
-	color: #D2001C;
 }
 
 .articles_item:first-child a .bottom_border {
@@ -242,7 +362,7 @@ li {
 
 .video_section {
 	width: 1448px;
-	margin: 70px 46px 105px;
+	margin: 70px 0 105px;
 	padding: 70px 137px 63px;
 	background-color: #F9F9F9;
 	color: #222222;

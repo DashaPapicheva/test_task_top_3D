@@ -37,17 +37,19 @@
         </div>
 
         <div class="header_intro">
-            <a class="logo_image" href="#"><img src="pict/logo.png" alt="Логотип Top 3D shop"></a>
-            <div class="header_intro_words">Ваш эксперт <br>на рынке <span class="red">3D</span>-техники</div>
+            <div class="header_intro_brand">
+                <a class="logo_image" href="#"><img src="pict/logo.png" alt="Логотип Top 3D shop"></a>
+                <div class="header_intro_slogan">Ваш эксперт <br>на рынке <span class="red">3D</span>-техники</div>
+            </div>
             <div class="rating_image_wrapper">
                 <img class="rating_image" src="pict/yandex_rating.png" alt="Рейтинг на Яндекс Маркете">
             </div>
-            <form action="#">
-                <input type="text" name="searchPlace" id="searchPlace" placeholder="Введите запрос, например, Formlabs Form 2">
-                <button type="submit">Найти</button>
+            <form class="header_intro_search" action="#">
+                <input class="header_intro_input" type="text" name="searchPlace" id="searchPlace" placeholder="Введите запрос, например, Formlabs Form 2">
+                <button class="header_intro_btn red" type="submit">Найти</button>
             </form>
-            <a href="#">Войти</a>
-            <a href="#">Корзина пуста</a>
+            <a class="entry_btn" href="#">Войти</a>
+            <a class="basket_btn" href="#">Корзина пуста</a>
         </div>
 
         <nav class="header_nav">
@@ -66,39 +68,37 @@
 
         <div class="header_offers">
             <ul class="header_offers_list">
-                <li><a href="#">3D-принтеры</a></li>
-                <li><a href="#">3D-сканеры</a></li>
-                <li><a href="#">Станки</a></li>
-                <li><a href="#">Роботы</a></li>
-                <li><a href="#">Образование</a></li>
-                <li><a href="#">Стоматологам</a></li>
-                <li><a href="#">Гаджеты</a></li>
-                <li><a href="#">Материалы</a></li>
-                <li><a href="#">ПО</a></li>
-                <li><a href="#">Решения</a></li>
-                <li><a href="#">Учебный центр</a></li>
-                <li><a href="#">Услуги</a></li>
+                <li><a class="header_offers_item" href="#">3D-принтеры</a></li>
+                <li><a class="header_offers_item" href="#">3D-сканеры</a></li>
+                <li><a class="header_offers_item" href="#">Станки</a></li>
+                <li><a class="header_offers_item" href="#">Роботы</a></li>
+                <li><a class="header_offers_item" href="#">Образование</a></li>
+                <li><a class="header_offers_item" href="#">Стоматологам</a></li>
+                <li><a class="header_offers_item" href="#">Гаджеты</a></li>
+                <li><a class="header_offers_item" href="#">Материалы</a></li>
+                <li><a class="header_offers_item" href="#">ПО</a></li>
+                <li><a class="header_offers_item" href="#">Решения</a></li>
+                <li><a class="header_offers_item" href="#">Учебный центр</a></li>
+                <li><a class="header_offers_item" href="#">Услуги</a></li>
             </ul>
         </div>
     </header>
 
     <main>
         <section class="main_block">
-            <div>
-                <div>
-                    <img src="pict/top_team.png" alt="Команда компании Top 3D">
-                </div>
+            <div class="main_pict"></div>
         
-                <h3>Твоя работа в крупнейшем интеграторе цифрового производства</h3>
+            <div class="resume_block">
+                <h3>Твоя работа <br>в крупнейшем интеграторе цифрового производства</h3>
         
-                <a href="#">Отправить резюме</a>
+                <a class="resume_btn" href="#">Отправить резюме</a>
         
-                <small>Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</small>
+                <small class="resume_note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</small>
             </div>
     
-            <div>
+            <div class="about_block">
                 <p>
-                    Top 3D Shop – лидер по продажам 3D-оборудования в России и странах СНГ. В 2018 мы стали лучшим интегратором 3D оборудования по аддитивным технологиям и цифровому производству по версии 3D Print Awards.
+                    Top 3D Shop – лидер по продажам 3D-оборудования в России и странах СНГ. В 2018 мы стали лучшим интегратором 3D оборудования по аддитивным технологиям и цифровому производству по версии <span class="underlined red">3D Print Awards</span>.
                 </p>
     
                 <p>
@@ -109,13 +109,17 @@
                     Новая цель: 1 млрд торгового оборота в этом году и выход на международные рынки. Если вы — целеустремленный специалист, готовый учиться новым навыкам и учить других, мыслите не просто как исполнитель, а как владелец своего направления, то нам по пути!
                 </p>
             </div>
+            <div class="clear_block"></div>
         </section>
 
         <section class="articles">
-            <h4>Лучше один раз увидеть:</h4>
+            <div class="articles_header">
+                <h4 class="articles_title">Лучше один раз увидеть:</h4>
+                <span class="line"></span>
+            </div>
 
             <div class="articles_list">
-                <div class="articles_item red"><a href="#"><span class="bottom_border">Как устроена наша компания изнутри</span></a></div>
+                <div class="articles_item"><a href="#"><span class="bottom_border red">Как устроена наша компания изнутри</span></a></div>
 
                 <div class="articles_item"><a href="#"><span class="bottom_border">Как создавалась компания - необычная история</span></a></div>
 
